@@ -1,0 +1,51 @@
+* {
+  --splitSectionBg: #6d71c3d7;
+  --splitTxtColor: #fff;
+  --btnBg: #d4b9e0;
+}
+
+.split-with-friend {
+  background: var(--splitSectionBg);
+  border-radius: 5px;
+  padding: 1rem;
+
+  width: fit-content;
+  color: var(--splitTxtColor);
+
+  > h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.85rem;
+
+    > label {
+      font-size: 1rem;
+    }
+
+    > input,
+    select {
+      background: none;
+      outline: none;
+      border: solid 1px var(--btnBg);
+      border-radius: 5px;
+      padding: 0.5rem;
+      transition: linear 0.3s;
+      color: var(--splitTxtColor);
+
+      &:focus {
+        border-color: #000;
+      }
+    }
+
+    > select {
+      text-align: center;
+      appearance: none;
+      color: #000;
+    }
+  }
+}

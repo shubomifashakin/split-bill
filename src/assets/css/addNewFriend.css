@@ -1,0 +1,45 @@
+.add-new-friend {
+  background: var(--splitSectionBg);
+  border-radius: 5px;
+  padding: 1rem;
+
+  width: fit-content;
+  color: var(--splitTxtColor);
+
+  > h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.85rem;
+
+    > label {
+      font-size: 1rem;
+    }
+
+    > input,
+    select {
+      background: none;
+      outline: none;
+      border: solid 1px var(--btnBg);
+      border-radius: 5px;
+      padding: 0.5rem;
+      color: var(--splitTxtColor);
+    }
+
+    > select {
+      text-align: center;
+      appearance: none;
+      color: #000;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

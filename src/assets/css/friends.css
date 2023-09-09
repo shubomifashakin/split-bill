@@ -1,0 +1,22 @@
+* {
+  --friendBg: #6d72c3;
+  --friendTxtColor: #fff;
+  --btnBg: #d4b9e0;
+}
+
+.friend {
+  background: var(--friendBg);
+  border-radius: 5px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+
+  > .inner {
+    > p {
+      color: var(--friendTxtColor);
+    }
+  }
+}
